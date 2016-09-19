@@ -8,7 +8,7 @@ namespace AnimalShelter
 {
     class Cat : Animal
     {
-        public Cat()
+        public Cat(String name, bool isman, int age): base(name , isman, age)
         {
 
         }
