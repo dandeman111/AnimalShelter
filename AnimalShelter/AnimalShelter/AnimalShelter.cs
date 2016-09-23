@@ -9,15 +9,31 @@ namespace AnimalShelter
     class AnimalShelter
     {
         public String Name { get; set; }
-        //public List<Animal> { get;set;}
+
+        public List<Animal> Animals { get;set;}
 
         public AnimalShelter()
         {
-            this.Name = "shelterbelter";
+            this.Name = "shelterSkelter";
             
         }
-        //Add dog
-        //add cat
+        // de honden en katten appart in de lijst van dieren doen
+        public void addAnimal(Dog dog)
+        {
+            Animals.Add(dog);
+
+        }
+        public void addAnimal(Cat cat)
+        {
+            Animals.Add(cat);
+        }
+        //of moet ik het zo doen
+        public void addAnimal(Animal animal)
+        {
+            Animals.Add(animal);
+        }
+
+        
 
     }
 }

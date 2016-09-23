@@ -8,9 +8,11 @@ namespace AnimalShelter
 {
     class Cat : Animal
     {
-        public Cat(String name, bool isman, int age): base(name , isman, age)
-        {
+        public string badhadbits { get; set; }
 
+        public Cat(String name, bool isman, int age, string badhabits): base(name , isman, age)
+        {
+            this.badhadbits = badhadbits;
         }
     }
 }
