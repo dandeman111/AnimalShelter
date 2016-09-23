@@ -17,20 +17,34 @@ namespace AnimalShelter
             this.Name = "shelterSkelter";
             
         }
-        // de honden en katten appart in de lijst van dieren doen
-        public void addAnimal(Dog dog)
-        {
-            Animals.Add(dog);
-
-        }
-        public void addAnimal(Cat cat)
-        {
-            Animals.Add(cat);
-        }
-        //of moet ik het zo doen
+        //honden of katten toevoegen
         public void addAnimal(Animal animal)
         {
             Animals.Add(animal);
+        }
+        public List<Animal> haalHonden()
+        {
+            List<Animal> dogs = new List<Animal>();
+            foreach(Animal a in Animals)
+            {
+                if (a.GetType() == typeof(Dog))
+                {
+                    dogs.Add(a);
+                }
+            }
+            return dogs;
+        }
+        public List<Animal> haalKatten()
+        {
+            List<Animal> cats = new List<Animal>();
+            foreach (Animal a in Animals)
+            {
+                if (a.GetType() == typeof(Dog))
+                {
+                    cats.Add(a);
+                }
+            }
+            return cats;
         }
 
         
