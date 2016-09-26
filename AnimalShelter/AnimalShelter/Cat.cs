@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace AnimalShelter
 {
-    class Cat : Animal
+   public class Cat : Animal
     {
-        public string badhadbits { get; set; }
+        public String Badhadbits { get; set; }
 
-        public Cat(String name, bool isman, int age, string badhabits): base(name , isman, age)
+        public Cat(String name, bool isman, int age, String badhabits): base(name , isman, age)
         {
-            this.badhadbits = badhadbits;
+            this.Badhadbits = badhabits;
         }
     }
 }

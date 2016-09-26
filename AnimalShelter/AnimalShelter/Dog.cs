@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AnimalShelter
 {
-    class Dog : Animal
+   public class Dog : Animal
     {
         public DateTime lastwalk { get; set; }
 

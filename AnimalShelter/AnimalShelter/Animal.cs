@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AnimalShelter
 {
-    class Animal
+    abstract public class Animal
     {
         protected String animalName;
         protected bool gereserveerd;
